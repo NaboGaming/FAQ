@@ -144,7 +144,10 @@ Kubali Sasa Na Uweze Install App Ya NaboGaming.
 </div>
 </div>
 </div>
-
+<script>
+function autoRefresh() {location.reload();}const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
+setInterval(autoRefresh, oneDayInMilliseconds);
+</script>
 <script>function handleOrientation(event) {var tiltLR = event.gamma;var tiltFB = event.beta;var gyroscopeDiv = document.getElementById('gyroscope-div');gyroscopeDiv.style.transform = `rotateX(${-tiltFB}deg) rotateY(${tiltLR}deg)`;}if (window.DeviceOrientationEvent) {window.addEventListener('deviceorientation', handleOrientation);} else {var gyroscopeDiv = document.getElementById('gyroscope-div');gyroscopeDiv.textContent = "";}</script>
 <script src="bootstrap.min.js"></script>
 <script src="custom.js"></script>
